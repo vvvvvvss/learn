@@ -33,4 +33,8 @@ HTML stands for Hyper Text Markup Language. It is the standard markup language f
 `<td>` - table data
 `<table border = "1">` - gives borders, where 1 defines the thickness
 `<table border = "1" style=border-collapse:collapse>` - collapse double columns
-
+## video tag
+## audio tag
+## iFrames
+## Semantic tags
+It describes the meaning of those tags
