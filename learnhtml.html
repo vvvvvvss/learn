@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <title>THE ULTIMATE HTML HANDBOOK</title>
+</head>
+<body>
+    <!-- Table -->
+    <table border="1" style="border-collapse: collapse;">
+        <!-- table,border, style -->
+        <tr>
+            <!-- tr-table rows -->
+            <th >Day</th> 
+            <!-- th - table heading -->           
+            <th>Sub</th>
+        </tr>
+        <tr>
+            <td colspan="1"  rowspan="1">Monday</td>
+            <!-- td-table data -->
+             <!-- colspan -spacing of the column -->
+            <!-- rowspan- spacing of column -->
+            <td>Tuesday</td>
+        </tr>
+        <tr>
+            <td colspan="1">C</td>
+            <td>Java</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- horizontal break -->
+
+
+
+    <h2>User Credentials</h2>
+    <label>Username: &nbsp;</label>
+    <!-- label tag to label the input -->
+     <!-- &nbsp - spacing -->
+    <input type="text" placeholder="enter here" required>
+    <!-- input tags -->
+    <br>
+    <!-- break/ next line -->
+    <label>Existing Username: &nbsp;</label>
+    <input type="text" placeholder="enter here" required value="Varsha_shubhashri">
+    <!-- this give the default value  -->
+    <br>
+    <label>Password: &nbsp;</label>
+    <input type="password" placeholder="enter" required>
+    <!-- input type = password - bullet letters -->
+    <br>
+    <hr>
+    <label>Gender: &nbsp; &nbsp;</label>
+    <input type="radio"/>male
+    <input type="radio"/>female
+    <input type="radio"/>prefer not say
+    <!-- type: radio-> multiple choice -->
+    <!-- in this multiple options can be chosen -->
+     <br>
+    <label>Gender: &nbsp;</label>
+    <input type="radio" name="Gender"/><label>M</label>
+    <input type="radio" name="Gender"/><label>F</label>
+    <input type="radio" name="Gender"/><label>prefer to not say</label> 
+    <!-- only type can be chosen -->
+     <br>
+     <hr>
+    <label>Subjects of interest: &nbsp;</label>
+    <input type="checkbox" name="Subjects of interest"/><label>C</label>
+    <input type="checkbox" name="Subjects of interest" checked disabled/><label>Java</label>
+    <input type="checkbox" name="Subjects of interest" checked/><label>Python</label>
+    <!-- checkboxes -->
+    <!-- `checked`-> checks the box by default and CAN be changed -->
+    <!-- `checked disabled`-> checks the box by default and CANNOT be changed -->
+    <br>
+    <label>DOB</label>
+    <input type="date"/>
+    <!-- for date/month/year format -->
+    <br>
+    <label>Select your course</label>
+    <select>
+        <!-- drop down feature -->
+         <option value=""></option>
+         <option value="Fs">Fullstack</option>
+         <option value="F-end">Frontend</option>
+         <option value="b-end">backend</option>
+         <!-- drop down option -->
+          <!-- `name` -> when you want to group attributes -->
+           <!-- `values` -> when you want to display userdefined values -->
+    </select>
+    <br>
+    <input type="submit">
+    <br>
+    <input type="reset">
+
+
+    
+    <!-- inserting the above in a table tag -->
+    <table>
+      <tr>
+        <td> <h2>User Credentials</h2></td>
+      </tr>
+        <br>
+        <td><label>Username: &nbsp;</label></td>
+        <td><input type="text" placeholder="enter here" required></td>
+    </tr>
+        <br>
+    <tr>
+        <td><label>Existing Username: &nbsp;</label></td>
+        <td><input type="text" placeholder="enter here" required value="Varsha_shubhashri"></td>
+        <br>
+    </tr>
+    <tr>
+        <td><label>Password: &nbsp;</label></td>
+        <td><input type="password" placeholder="enter" required></td>
+        <br>
+    </tr>
+    <tr>
+        <td><label>Gender: &nbsp;</label></td>
+        <td><input type="radio"/>male
+            <input type="radio"/>female
+            <input type="radio"/>prefer not say</td>
+            <br>
+    </tr>
+    <tr>
+        <td> <label>Gender: &nbsp;</label></td>
+        <td><input type="radio" name="Gender"/><label>M</label>
+            <input type="radio" name="Gender"/><label>F</label>
+            <input type="radio" name="Gender"/><label>prefer to not say</label> </td>
+            <br>
+    </tr>
+    <tr>
+        <td><label>Subjects of interest: &nbsp;</label></td>
+        <td><input type="checkbox" name="Subjects of interest"/><label>C</label>
+            <input type="checkbox" name="Subjects of interest" checked disabled/><label>Java</label>
+            <input type="checkbox" name="Subjects of interest" checked/><label>Python</label></td>
+        <td><label>DOB: &nbsp;</label></td>
+        <td><input type="date"/></td>
+        <br>
+    </tr>
+    <tr>
+        <td><label>Select your course: &nbsp;</label></td>
+        <td><select>
+            <!-- drop down feature -->
+             <option value=""></option>
+             <option value="Fs">Fullstack</option>
+             <option value="F-end">Frontend</option>
+             <option value="b-end">backend</option></td>
+        <br>
+    </tr>
+    </table>
+    <!-- this helps in formatiting -->
+</body>    

@@ -1,0 +1,115 @@
+/* 
+    Button
+    1. Hover
+    2. Active
+    3. Focus 
+*/
+
+/* HOVER STATE */
+button:hover{
+    color: rgb(141, 141, 233);
+    background-color: plum;
+    cursor: pointer;
+}
+/* affect that come when pointing on the button */
+
+/* ACTIVE STATE */
+button:active{
+    color: rgb(61, 61, 211);
+    background-color: rgb(226, 170, 96);
+    cursor: pointer;
+}
+/* affect that come when clciked on the button */
+
+/* FOCUS STATE */
+button:focus{
+    color: rgb(202, 238, 73);
+    background-color: rgba(102, 65, 204, 0.685);
+}
+/* indicates tht the button has already been clicked */
+
+a:link{
+    color: brown;
+}
+a:visited{
+    color: green;
+}
+/* here "visited" is the pseudo state */
+/* pseudo classes help in styling these states */
+
+span{
+    padding: 8px;
+    margin: 8px;
+    background-color: maroon;
+    color: aliceblue;
+}
+/* custom styles for the first class only */
+span:first-child{
+    padding: 8px;
+    margin: 8px;
+    background-color: aliceblue;
+    color: maroon;
+}
+span:nth-child(7){
+    padding: 8px;
+    margin: 8px;
+    background-color: aliceblue;
+    color: maroon;
+}
+span:last-child{
+    padding: 8px;
+    margin: 8px;
+    background-color: aliceblue;
+    color: maroon;
+}
+span:nth-child(even){
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(108, 175, 235);
+    color: maroon;
+}
+
+/* PSEUDO ELEMENTS */
+/* helps to append the contents on html through css via pseudo */
+h1::before{
+    content: "merchant";
+}
+/* adds content before */
+h1::after{
+    content: "venice";
+}
+/* adds content after */
+h1{
+    font-size: medium;
+}
+
+/* shapes */
+.square{
+    margin: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: mediumvioletred;
+    /* position: relative; */
+}
+.square::before{
+    width: 50px;
+    height: 50px;
+    background-color: mediumvioletred;
+    border-radius: 50%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* when u use before make sure to add content */
+}
+.square::after{
+    width: 50px;
+    height: 50px;
+    background-color: mediumvioletred;
+    border-radius: 50%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* when u use before make sure to add content */
+}

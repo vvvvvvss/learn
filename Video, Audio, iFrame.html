@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video, Audio, iFrame and semantic tags</title>
+    </head>
+    <body>
+        <h6>video displayed in UI</h6>
+        <video controls autoplay loop width="250" height="150">
+            <!-- controls-shows play, pause, etc, buttons -->
+            <!-- autoplay - starts playing before the cue  -->
+            <!-- loop - plays endlessly -->
+            <source src="sample.mp4" type="video/ogg"/>
+            <!-- mp4 video cn be played using ogg tag, works the same -->
+            <source src="sample.mp4" type="video/mp4"/>
+            <!-- this doesnt play the video twice. -->
+            <!-- to play a video twice or two different videos. repeat the entire process from the`<video>` tag -->
+            the video isnt supported
+            <!-- this msg is own when the browser is otdated -->
+        </video>
+        <!-- a different way of the above -->
+        <!-- <video src="sample.mp4" type="video/mp4" controls autoplay loop width="250" height="150"/> -->
+
+        <audio controls autoplay loop>
+            <source src="waves.mp3" type="audio/mp3"/>
+        </audio>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LIER2z3DBe8?si=9iqAfZamcow0FyW7" title="YouTube video player" >
+        </iframe>
+        <!-- iFrame are youtube embedments -->             
+    </body>
+</html>

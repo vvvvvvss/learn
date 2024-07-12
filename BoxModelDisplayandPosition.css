@@ -1,0 +1,150 @@
+/* *{
+    box-sizing: border-box;
+} */
+/* include the padding and border in an element's total width and height. */
+h2{
+    color: rgb(240, 116, 240) ;
+    background-color: #8bdde7;
+    border: 2px dotted;
+    padding: 0 0 0 15px;
+    /* internal padding */
+    /* padding/spacing in call four direction */
+    /* top right bottom left */
+    margin: 0 0 0 20px;
+    /* external spacing */
+    /* margin/spacing in call four direction */
+    /* top right bottom left */
+}
+.display{
+    display: block;
+    /* block - takes the entire width of the screen */
+    color: sandybrown;
+    background-color: greenyellow;
+}
+.display2{
+    display: block;
+    /* block - takes the entire width of the screen */
+    width: 50px;
+    /* altering the width */
+    color: rgb(235, 124, 28);
+    background-color: rgb(191, 243, 113);
+}
+.display3{
+    display: block;
+    /* block - takes the entire width of the screen */
+    height: 50px;
+    width: 25px;
+    /* altering the width and height */
+    color: sandybrown;
+    background-color: greenyellow;
+}
+/* inline */
+.inline{
+    display: inline;    
+    color: rgb(243, 241, 111);
+    background-color: rgb(183, 156, 247);
+}
+/* inline doesnt waste space */
+.inline2{
+    display: inline;
+    width: 50px;
+    /* altering the width */
+    color: rgb(243, 241, 111);
+    background-color: rgb(183, 156, 247);
+}
+.inline3{
+    display: inline;
+    height: 50px;
+    width: 25px;
+    /* altering the width and height */
+    color: rgb(243, 241, 111);
+    background-color: rgb(183, 156, 247);
+}
+/* the height and width have no function here, there is a defined width and size which cant be altered */
+.inlineblock{
+    display: inline-block;
+    color: rgb(243, 157, 210);
+    background-color: rgb(200, 248, 191);
+}
+.inlineblock2{
+    display: inline-block;
+    width: 50px;
+    /* altering the width */
+    color: rgb(243, 157, 210);
+    background-color: rgb(200, 248, 191);
+}
+.inlineblock3{
+    display: inline-block;
+    height: 50px;
+    width: 25px;
+    /* altering the width and height */
+    color: rgb(243, 157, 210);
+    background-color: rgb(200, 248, 191);
+}
+/* inline-block is a combination of inline and block, here unlike inline, the width and height can be altered  */
+
+
+
+/* POSITIONS */
+.static{
+    position: static;
+    color: beige;
+    background-color: darkblue;
+}
+/* static is default */
+
+.relative{
+    position: relative;
+    color: beige;
+    background-color: darkblue;
+    border: 1px;
+    top: 22px;
+    left: 10px;
+}
+/* it is relative to its original/ static position. offset must be specified */
+/* there are chances of collision */
+
+#parent{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    color: bisque;
+    background-color: blueviolet;
+    border: black dotted 1px;
+    top: 25px;
+    left: 25px;
+}
+/* a parent is mandatory for absolute */
+/* parent bust be position relavte */
+/* offset must be in relavtive to the parent not the neitre ui */
+
+.absolute{
+    position: absolute;
+    color: #256398;
+    background-color: #d686fc;
+    border: black dotted 1px;
+    right: 0px;
+    bottom: 0px;
+}
+/* absolute must have parent tag */
+/* if theres no parent tag it will assume body tag as the parent by default */
+
+.fixed{
+    position: fixed;
+    color: #454565;
+    background-color: aliceblue;
+    border: 1px solid black;
+    top: 150px;
+    left: 125px;
+}
+/* this element will remain fixed even after scrolling */
+/* mention of offsets are mandatory */
+
+.sticky{
+    position: sticky;
+    color: #8c8ceb;
+    background-color: rgb(134, 190, 240);
+    border: 1px solid rgb(34, 21, 21);
+    top: 300px;
+}
+/* this makes the element scrollable until the end of the page its present in, if scrolled furthur down it acts as fixed */

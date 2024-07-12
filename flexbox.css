@@ -1,0 +1,13 @@
+.parent{
+    background-color: brown;
+    color: rgb(194, 162, 22);
+    display: flex;
+}
+/* anything within flex has a predefined size */
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(60, 50, 96);
+    color: beige;
+    border: plum 2.5px solid;
+}
